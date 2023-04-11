@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:hint="1"
+        android:id="@+id/edittext_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:hint="2"
+        android:id="@+id/edittext_main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:hint="2"
+        android:id="@+id/edittext_main3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_main"
+        android:text="SEND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/button_background" />
+
+</LinearLayout>

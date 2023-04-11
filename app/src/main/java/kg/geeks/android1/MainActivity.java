@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     AppCompatButton button;
-    EditText editText, editText2, editText3;
+    EditText editText, editTextTwo, editTextThree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                if (!editText.getText().toString().isEmpty()&&!editText2.getText().toString().isEmpty()&&!editText3.getText().toString().isEmpty()) {
+                if (!editText.getText().toString().isEmpty()&&
+                        !editTextTwo.getText().toString().isEmpty()&&
+                        !editTextThree.getText().toString().isEmpty()) {
                     navigateToSecond(
                             editText.getText().toString(),
-                            editText2.getText().toString(),
-                            editText3.getText().toString());
+                            editTextTwo.getText().toString(),
+                            editTextThree.getText().toString());
                 }else {
                     System.out.println("Input some data in field");
                 }
@@ -40,17 +42,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void navigateToSecond(String data, String data2, String data3){
+    private void navigateToSecond(String data, String dataTwo, String dataThree){
         Intent intent = new Intent(this, SecondActivity.class);
         intent.putExtra("data_main",data);
-        intent.putExtra("data_main2",data2);
-        intent.putExtra("data_main3",data3);
+        intent.putExtra("data_main2",dataTwo);
+        intent.putExtra("data_main3",dataThree);
         startActivity(intent);
     }
     private void initUI() {
         button=findViewById(R.id.btn_main);
         editText=findViewById(R.id.edittext_main);
-        editText2=findViewById(R.id.edittext_main2);
-        editText3=findViewById(R.id.edittext_main3);
+        editTextTwo =findViewById(R.id.edittext_main2);
+        editTextThree =findViewById(R.id.edittext_main3);
     }
 }

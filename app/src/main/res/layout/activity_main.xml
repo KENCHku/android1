@@ -4,50 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
-        android:hint="1"
         android:id="@+id/edittext_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginTop="25dp"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:inputType="textCapSentences"
+        android:textColorHint="@color/grey"
+        style="@style/EditText.Main"
+        android:layout_marginTop="100dp"
+        android:hint="Name" />
 
     <EditText
-        android:hint="2"
         android:id="@+id/edittext_main2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginTop="25dp"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:inputType="textCapSentences"
+        android:textColorHint="@color/grey"
+        style="@style/EditText.Main"
+        android:hint="Last Name" />
 
     <EditText
-        android:hint="2"
         android:id="@+id/edittext_main3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginTop="25dp"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        style="@style/EditText.Main"
+        android:textColorHint="@color/grey"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_main"
-        android:text="SEND"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:background="@drawable/button_background" />
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background"
+        android:text="SEND" />
 
 </LinearLayout>

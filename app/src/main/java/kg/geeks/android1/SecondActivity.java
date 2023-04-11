@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
-    TextView textView, textView2, textView3;
+    TextView textView, textViewTwo, textViewThree;
     ImageView imageView;
 
     @Override
@@ -21,17 +21,17 @@ public class SecondActivity extends AppCompatActivity {
 
     private void getIntentFromMain() {
        String data =  getIntent().getStringExtra("data_main");
-       String data2 =  getIntent().getStringExtra("data_main2");
-       String data3 =  getIntent().getStringExtra("data_main3");
+       String dataTwo =  getIntent().getStringExtra("data_main2");
+       String dataThree =  getIntent().getStringExtra("data_main3");
        textView.setText(data);
-       textView2.setText(data2);
-       textView3.setText(data3);
+       textViewTwo.setText(dataTwo);
+       textViewThree.setText(dataThree);
     }
 
     private void initUI() {
         textView=findViewById(R.id.text_view_second);
-        textView2=findViewById(R.id.text_view_second2);
-        textView3=findViewById(R.id.text_view_second3);
+        textViewTwo =findViewById(R.id.text_view_second2);
+        textViewThree =findViewById(R.id.text_view_second3);
         imageView=findViewById(R.id.image_view);
     }
 }
